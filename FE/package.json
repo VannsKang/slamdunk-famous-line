@@ -12,7 +12,8 @@
   },
   "author": "soomyung",
   "dependencies": {
-    "core-js": "^3.7.0"
+    "core-js": "^3.7.0",
+    "sweetalert2": "^10.15.5"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",

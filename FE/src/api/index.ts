@@ -2,6 +2,7 @@ import { renderCommentsList } from '../App';
 import { COMMENTS_API } from '../config';
 import { commentListState } from '../store';
 import { formattedComments } from '../utils';
+import Swal from 'sweetalert2';
 
 // SECTION list
 export const initComments = async () => {
@@ -12,8 +13,14 @@ export const initComments = async () => {
     const result = await response.json();
     commentListState.comments = formattedComments(result);
   } catch (error) {
-    alert(`${error} !!!`);
-    console.log(`${error} !!!`);
+    Swal.fire({
+      icon: 'error',
+      text: error.message,
+      timer: 1500,
+      showConfirmButton: false,
+    });
+    // alert(`${error} !!!`);
+    console.log(`${error.message} !!!`);
   }
 };
 
@@ -34,8 +41,14 @@ export const postComments = async <T>(reqBody: T) => {
     await initComments();
     renderCommentsList();
   } catch (error) {
-    alert(`${error} !!!`);
-    console.log(`${error} !!!`);
+    Swal.fire({
+      icon: 'error',
+      text: error.message,
+      timer: 1500,
+      showConfirmButton: false,
+    });
+    // alert(`${error} !!!`);
+    console.log(`${error.message} !!!`);
   }
 };
 
@@ -70,7 +83,13 @@ export const getPagination = async (e: any) => {
     commentListState.comments = await formattedComments(result);
     renderCommentsList();
   } catch (error) {
-    alert(`${error} !!!`);
-    console.log(`${error} !!!`);
+    Swal.fire({
+      icon: 'info',
+      text: error.message,
+      timer: 1500,
+      showConfirmButton: false,
+    });
+    // alert(`${error} !!!`);
+    console.log(`${error.message} !!!`);
   }
 };

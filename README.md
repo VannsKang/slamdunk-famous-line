@@ -1,8 +1,10 @@
 # 슬램덩크 명대사 입력기
 
+---
+
 > 본 프로젝트는 TypeScript, Babel, Core.js, SPA의 원리를 공부하고자 시작했습니다.
 
-![preview](https://user-images.githubusercontent.com/4216651/108618230-b4dc8c80-745f-11eb-91c8-c2acc0637366.gif)
+![image](https://user-images.githubusercontent.com/4216651/108629904-78338400-74a5-11eb-89c3-a59bcfa9ccc6.png)
 
 ## 적용 기술 스택
 
@@ -17,6 +19,10 @@
 - 댓글은 이름 1자 이상, 내용은 10자 이상 입력해야 합니다.
 - `CORS` 이슈는 서버에서 미들웨어를 사용하지 않고 프론트 서버에서 해결합니다.
 - IE10이상, Evergreen 브라우저를 지원해야 합니다.
+
+#### 적용예시
+
+![new preview](https://user-images.githubusercontent.com/4216651/108629886-6225c380-74a5-11eb-9090-04409b9554c1.gif)
 
 ### 설치
 
