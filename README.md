@@ -4,7 +4,7 @@
 
 > 본 프로젝트는 TypeScript, Babel, Core.js, SPA의 원리를 공부하고자 시작했습니다.
 
-![image](https://user-images.githubusercontent.com/4216651/108629904-78338400-74a5-11eb-89c3-a59bcfa9ccc6.png)
+![image](https://user-images.githubusercontent.com/4216651/108630060-5e467100-74a6-11eb-9088-ec74cf6a7ab3.png)
 
 ## 적용 기술 스택
 
@@ -344,7 +344,6 @@ if (NODE_ENV === 'DEVELOPMENT') {
 ```json
 {
   //...
-  },
   "jest": {
     "testURL": "http://localhost:9999"
   }
