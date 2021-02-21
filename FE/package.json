@@ -1,0 +1,38 @@
+{
+  "name": "ts-corejs-jest-webpack-spa",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ts-corejs-jest-webpack-spa",
+  "main": "src/index.ts",
+  "proxy": "http://localhost:9999/",
+  "scripts": {
+    "dev": "NODE_ENV=DEVELOPMENT webpack-dev-server",
+    "build": "rm -rf dist && NODE_ENV=PRODUCTION webpack --progress",
+    "test": "jest"
+  },
+  "author": "soomyung",
+  "dependencies": {
+    "core-js": "^3.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "@babel/runtime-corejs3": "^7.11.2",
+    "@types/jest": "^25.2.3",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^5.0.2",
+    "jest": "^26.6.3",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.1",
+    "whatwg-fetch": "^3.5.0"
+  },
+  "jest": {
+    "testURL": "http://localhost:9999"
+  }
+}

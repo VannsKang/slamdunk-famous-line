@@ -1,0 +1,32 @@
+.comments-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.comments-list .card {
+  margin: 10px 0;
+}
+
+.comments-form {
+  display: flex;
+  justify-content: center;
+}
+
+.comments-form .card {
+  width: 500px;
+}
+
+.form-item label {
+  margin-bottom: 10px;
+}
+
+.comments-form-group {
+  min-width: 500px;
+}
