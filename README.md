@@ -2,7 +2,7 @@
 
 ---
 
-> 본 프로젝트는 TypeScript, Babel, Core.js, SPA의 원리를 공부하고자 시작했습니다.
+> 본 프로젝트는 TypeScript, Babel, Core.js를 이용해 SPA Framework를 쓰지 않고 SPA를 구현하고자 시작했습니다.
 
 ![image](https://user-images.githubusercontent.com/4216651/108630060-5e467100-74a6-11eb-9088-ec74cf6a7ab3.png)
 
@@ -19,6 +19,7 @@
 - 댓글은 이름 1자 이상, 내용은 10자 이상 입력해야 합니다.
 - `CORS` 이슈는 서버에서 미들웨어를 사용하지 않고 프론트 서버에서 해결합니다.
 - IE10이상, Evergreen 브라우저를 지원해야 합니다.
+- SPA Framework (React, Vue.js, Svelt 등)를 사용하지 않고 SPA 구현
 
 #### 적용예시
 
